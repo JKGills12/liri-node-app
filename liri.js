@@ -28,6 +28,8 @@ var defaulted = {
     task: ""
 }
 
+var commands = ["spotify-this-song", "movie-this", "concert-this", "do-what-it-says", "Never Mind"]
+
 // Liri takes in concert-this commands
 
 
