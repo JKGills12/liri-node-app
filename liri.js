@@ -4,15 +4,29 @@
 // movie-this
 // do-what-it-says
 
-
+// required npm modules
 require("dotenv").config();
-
-// import stored keys
+var inquirer = require("inquirer")
+var fs = require("fs");
+var axios = require("axios");
+var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
 
-// access keys info
+
+// API Keys stored here
+var omb
+    // access spotify keys info
 var spotify = new spotify(keys.spotify);
 
+// Build Liri commands and have defaulted values
+var commands = process.argv[2];
+var commandParam = "";
+var defaulted = {
+    song: "The Sign",
+    artist: "Ace of Base",
+    movie: "Mr. Nobody",
+    task: ""
+}
 
 // Liri takes in concert-this commands
 
@@ -25,6 +39,5 @@ var spotify = new spotify(keys.spotify);
 
 
 // Liri take do-what-it-says commands
-
 
 
