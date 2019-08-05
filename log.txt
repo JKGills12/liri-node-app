@@ -32,4 +32,13 @@ Name of artist: john legend
 Name of Venue: International Tennis Hall of Fame
 Venue location: Newport
 Date of Event: 08-04-2019
-======End of Concert Log Entry======
+======End of Concert Log Entry============Begin Movie Log Entry======
+Movie Title: Up
+Year Released: 2009
+IMDB Rating: 8.2
+Rotten Tomatoes Rating: 98%
+Country Where Produced: USA
+Language: English
+Plot: Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.
+Actors: Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson
+=======End Movie Log Entry=======
