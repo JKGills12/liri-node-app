@@ -72,7 +72,29 @@ function getSpotify(songTitle) {
         // logResults(data)
     });
 } 
-// Liri takes in concert-this commands
+// Function to search Bands in Town API
+function getBandsInTown(artist) {
+
+    var artist = userSearch;
+    var bandQueryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
+
+    axios.get(bandQueryURL).then(
+        function (response) {
+            // add line results for clarity of results
+            console.log("===================================="+ "\r\n")
+            console.log("Name of the Venue: " + response.data[0].venue.name + "\r\n");
+            console.log("Venue Location: " + response.data[0].venue.city + "\r\n");
+            console.log("Date of event: " + moment(response.data[0].datatime).format("MM-DD-YYYY") + "\r\n");
+
+            // Append data into log.txt
+            var logConcert = "======Begin Concert Log Entry=====" + "\nName of artist: " + artist + "\nName of Venue: " + response.data[0].venue.name + "\nVenue location: " + response.data[0].venue.city + "\nDate of Event: " + moment(response.data[0].datatime).format("MM-DD-YYYY") + "\n======End of Concert Log Entry======"
+
+            fs.appendFile("log.txt", logConcert, function (err) {
+              if (err) throw err;  
+            });
+        }
+    );
+}
 
 
 
