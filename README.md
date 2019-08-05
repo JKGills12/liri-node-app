@@ -12,7 +12,7 @@ OMDB - searched for movie info
 
 Bands in Town - Retrieved concert info 
 
-##Technology Used
+## Technology Used
 inquirer - Prompt the user in situations where search criteria is left out
 
 dotenv - used to securely protect the API keys
