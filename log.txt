@@ -1,0 +1,12 @@
+=======Begin Spotify Log Entry=======
+Artist: Ariana Grande
+Song Title: thank u, next
+ Preview Link: https://api.spotify.com/v1/tracks/3e9HZxeyfWwjeyPAMmWSSQ
+Album Name: thank u, next
+=====End Spotify Log Entry=====
+=======Begin Spotify Log Entry=======
+Artist: ZAYN
+Song Title: A Whole New World (End Title) - From "Aladdin"
+ Preview Link: https://api.spotify.com/v1/tracks/1iWHabUgUuuKLBa0TzTHfk
+Album Name: A Whole New World (End Title) [From "Aladdin"]
+=====End Spotify Log Entry=====

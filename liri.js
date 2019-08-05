@@ -62,9 +62,15 @@ function getSpotify(songTitle) {
         console.log("Song Preview Link: " + data.tracks.items[0].href + "\r\n");
         // return the album name
         console.log("Album: " + data.tracks.items[0].album.name + "\r\n");
+
+        // Append text into log.txt file
+        var logData = "=======Begin Spotify Log Entry=======" + "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\nSong Title: " + data.tracks.items[0].name + "\n Preview Link: " + data.tracks.items[0].href + "\nAlbum Name: " + data.tracks.items[0].album.name + "\n=====End Spotify Log Entry=====" + "\n";
+        
+        fs.appendFile("log.txt", logData, function (err) {
+            if (err) throw err;
+        });
+        // logResults(data)
     });
-
-
 } 
 // Liri takes in concert-this commands
 
