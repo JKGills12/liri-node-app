@@ -69,7 +69,7 @@ function getSpotify(songTitle) {
         fs.appendFile("log.txt", logData, function (err) {
             if (err) throw err;
         });
-        // log Results
+        // logResults(data);
     });
 } 
 // Function to search Bands in Town API
@@ -92,6 +92,7 @@ function getBandsInTown(artist) {
             fs.appendFile("log.txt", logConcert, function (err) {
               if (err) throw err;  
             });
+            // logResults(response)
         }
     );
 }
@@ -122,7 +123,7 @@ function getOMDB(movie) {
             console.log("* Plot: " + response.data.Plot + "\r\n");
             console.log("* Actors: " + response.data.Actors + "\r\n");
 
-            // Log Results
+            // logResults(response);
             var logMovie = "======Begin Movie Log Entry======" + "\nMovie Title: " + response.data.Title + "\nYear Released: " + response.data.Year + "\nIMDB Rating: " + response.data.imdbRating + "\nRotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\nCountry Where Produced: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors + "\n=======End Movie Log Entry=======" + "\n";
 
             fs.appendFile("log.txt", logMovie, function (err) {
@@ -132,7 +133,27 @@ function getOMDB(movie) {
     );
 }
 
-// Liri take do-what-it-says commands
+// Function takes do-what-it-says from random.txt
+function getRandom() {
+    fs.readFile("random.txt", "utf8", function (error, data ) {
+        if (error) {
+            return console.log(error);
+
+        } else {
+            console.log(data);
+
+            var randomData = data.split(",");
+            runLiri(randomData[0], randomData[1]);
+        }
+    });
+}
+
+// Function to log results from other functions
+function logResults(data) {
+    fs.appendFile("log.txt", data, function (err) {
+        if (err) throw err;
+    });
+}
 
 
 
