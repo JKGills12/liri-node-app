@@ -8,14 +8,14 @@ The Liri Bot acts like the personal assistant, Siri on our iPhones. Liri will ta
 To run the app, the user must follow these steps:
 * clone the the repo and enter their own Spotify API keys to the .env 
 * in the liri.js file, the user can pick either of these options to search:
-  * spotify-this-song -- to search for song info
-    * enter in the terminal: node liri.js spotify-this 'song title'
-  * concert-this -- to search for bands in town info
-    * enter in the terminal: node liri.js concert-this 'artist name'
-  * movie-this -- to search for movie info
-    * enter in the terminal: node liri.js movie-this 'movie title'
-  * do-what-it-says -- will pull data of whatever is in the random.txt
-    * enter in the terminal: node liri.js do-what-it-says 
+  * __spotify-this-song__ -- to search for song info
+    * enter in the terminal: __node liri.js spotify-this 'song title'__
+  * __concert-this__ -- to search for bands in town info
+    * enter in the terminal: __node liri.js concert-this 'artist name'__
+  * __movie-this__ -- to search for movie info
+    * enter in the terminal: __node liri.js movie-this 'movie title'__
+  * __do-what-it-says__ -- will pull data of whatever is in the random.txt
+    * enter in the terminal: __node liri.js do-what-it-says__ 
 * All successful search results will be logged in the log.txt file.
 
 ## Technology Used
