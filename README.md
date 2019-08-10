@@ -30,6 +30,6 @@ Moment.js - used to format display the event dates and times correctly
 Spotify API - used to pull song data from Spotify Database
 
 
-[Scrrencast] (https://drive.google.com/file/d/1w6TFY9GwN9T88FwbR7KeoGFiZ-lAgH5q/view)
+[Screencast Demo] (https://drive.google.com/file/d/1w6TFY9GwN9T88FwbR7KeoGFiZ-lAgH5q/view)
 
 [GitHub] (https://github.com/JKGills12/liri-node-app.git)
