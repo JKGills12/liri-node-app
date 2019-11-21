@@ -19,7 +19,7 @@ To run the app, the user must follow these steps:
 * All successful search results will be logged in the log.txt file.
 
 ## Technology Used
-axios - used to retriee data from OMDB API
+axios - used to retrieve data from OMDB API
 
 fs - used to retrieve text from random.txt using the do-what-it-says command
 
