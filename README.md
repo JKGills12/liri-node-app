@@ -1,7 +1,7 @@
 # liri-node-app
 
 ## What LIRI does
-The Liri Bot acts like the personal assistant, Siri on our iPhones. Liri will take in commands and return data back to the user with the closet results it can find to match it. If the user is in search of a song, this will take in the user's inputs to find a song with the title, artist name, and provides a preview link of the song from Spotify and which album it is from. For those searching for concerts in town, their search results will pull up the name of the venue for that artist, location, and date of the event. Liri can also search for movies and provide the Movie Title, Year it came out, IMDB rating, Rotten Tomato rating, Country where it was produced, language, the plot, and the actors in the film.
+The Liri Bot acts like the personal assistant, Siri on our iPhones. Liri will take in commands and return data back to the user with the closest results it can find to match it. If the user is in search of a song, this will take in the user's inputs to find a song with the title, artist name, and provides a preview link of the song from Spotify and which album it is from. For those searching for concerts in town, their search results will pull up the name of the venue for that artist, location, and date of the event. Liri can also search for movies and provide the Movie Title, Year it came out, IMDB rating, Rotten Tomato rating, Country where it was produced, language, the plot, and the actors in the film.
 
 
 ## How To Run the App
